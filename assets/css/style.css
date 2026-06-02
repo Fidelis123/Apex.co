@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+:root{
+    --primary-color: #2C3E50;
+    --secondary-color: #F39C12;
+    --success-color: #afb0ac;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: rgb(169, 213, 228);
+}
+.d-flexx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    padding: 0 2rem;
+    z-index: 1000;
+    background-color: var(--success-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-bottom: solid .5px var(--secondary-color);
+}
+.nav-list a {
+    position: relative;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+}
+
+.nav-list a:hover{
+    color: var(--warning-color);
+}
+.nav-list a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--warning-color);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+.nav-list a:hover::after,
+.nav-list a.active::after{
+    width: 100%;
+}
+.nav-list{
+    gap: 30%;
+}
+.nav-brand {
+    height: 50px;
+}
+.btn {
+    background-color: var(--secondary-color);
+    color: azure;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    color: var(--secondary-color);
+    background-color: azure;
+}
+
+
+    /* sign up */
+
+.sign-up {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.sign-up-cont {
+    width: 600px;
+    height: auto;
+    margin: 30px auto;
+    color: var(--primary-color);
+    
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sign-up-cont > *{
+    width: 100%;
+}
+
+.sign-up-cont input:not([type="checkbox"]),
+.sign-up-cont textarea, .sign-up-cont select{
+    width: 100%;
+    background: var(--success-color);
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.input-cont {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.keyword-inp {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-cont input{
+    width: 50% !important;
+}
+
+.keyword-inp {
+    width: 32% !important;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 10px 15px;
+    display: block;
+    margin: 5px auto;
+}
+
+.sign-up-cont small {
+    color: var(--success-color);
+}
+
+.sign-up-cont span a{
+    color: var(--danger-color);
+    text-decoration: underline;
+}
+
+.sign-up-cont img {
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+
