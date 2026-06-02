@@ -144,8 +144,13 @@ header{
     width: 50% !important;
 }
 
+.keyword-inp input{
+    width: 100%;
+    background: var(--success-color);
+}
+
 .keyword-inp {
-    width: 32% !important;
+    /* width: 32% !important; */
 }
 
 .form-btn {
@@ -167,6 +172,7 @@ header{
 .sign-up-cont img {
     height: 150px;
     margin-bottom: 20px;
-
 }
+
+
 
